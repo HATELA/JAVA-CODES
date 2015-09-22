@@ -1,11 +1,14 @@
 
 public class Program {
-	private static String _name = "";
+	public static Person person; //reference to the person class 
 
 	public static void main(String[] args) {
-		System.out.println(_name);
-		_name = "Hatela";
+		System.out.println("program started");
+		
+		person = new Person(18);
 
+		person.setName("Hatela");
+		System.out.println();
 	}
 
 }
